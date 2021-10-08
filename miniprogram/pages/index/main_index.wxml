@@ -4,9 +4,9 @@
     <text class="extra">规则</text>   
     <text class="extra2">客服</text>  
 </view>
-<image class="enterRoom" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/enterRoom.png" > </image>    
-<image class="singleGame" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/singleGame.png" > </image>   
- <image class="createRoom" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/createRoom.png" > </image>    
+<image class="enterRoom" catchtap="toenterRoom" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/enterRoom.png" > </image>    
+<image class="singleGame" catchtap="tosingleGame" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/singleGame.png" > </image>   
+ <image class="createRoom" catchtap="tocreateRoom" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/createRoom.png" > </image>    
 </view>
 <!---底部栏-->>
 <bottomIcon/>

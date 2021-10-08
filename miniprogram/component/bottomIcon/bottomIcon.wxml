@@ -1,6 +1,6 @@
 <!--components/bottomIcon/bottomIcon.wxml-->
 <view class="bottomIcon" >
-    <image class="QucikgameIcon" catchtap="Back" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/bobing.png"></image>
+    <image class="BackIcon" catchtap="Back" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/bobing.png"></image>
     <image class="historyIcon" catchtap="toHistory" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/paihangb.png"></image>
     <image class="myInfoIcon" catchtap="toMyInfo" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/wode.png"></image>
 </view>

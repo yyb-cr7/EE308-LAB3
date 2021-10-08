@@ -1,0 +1,14 @@
+<view class="indexContainer">
+    <image class="background" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/main_background.jpg" > </image>
+<view>  
+    <text class="enterButton">博饼</text> 
+</view> 
+<view class="itemView">用户名：
+    <input class="input" name="userName" placeholder="请输入用户名"
+    bindinput="userNameInput"/>
+</view>
+<image class="enterRoom" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/enterRoom.png" > </image>    
+<text class="endButton">结算</text>  
+</view>
+<!---底部栏-->>
+<bottomIcon/>

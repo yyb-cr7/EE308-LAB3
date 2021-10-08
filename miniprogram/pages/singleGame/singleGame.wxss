@@ -1,0 +1,85 @@
+/* pages/index/main_index.wxss */
+page {
+    height: 100%;
+}
+.indexContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blueviolet;
+}
+.avaUrl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background{
+   width :100%;
+   height : 92%;
+   position: absolute;
+   z-index: -1;
+}
+
+.enterRoom {
+    width : 280rpx;
+    height : 280rpx;
+    top: 20%;
+    left: 30%;
+    position: absolute;
+}
+.singleGame {
+    width : 280rpx;
+    height : 280rpx;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+}
+.itemView {
+    font-size: 32rpx;
+    top: 12%;
+    left: 40%;
+    position: absolute;
+}
+.input {
+    font-size: 36rpx;
+    font-weight: bold;
+    top: 1%;
+    left: 77%;
+    position:absolute;
+}
+
+.extra2 {
+    font-size: 36rpx;
+    font-weight: bold;
+    color: gold;
+    top: 1%;
+    left: 88%;
+    position:absolute;
+}
+
+.endButton {
+    width : 150rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    font-size: 38rpx;
+    font-weight: bold;
+    color: white;
+    border: 1rpx solid rgb(52, 10, 240);
+    border-radius: 45rpx;
+    top:83%;
+    position: absolute;
+}
+
+.enterButton {
+    color: white;
+    line-height: 80rpx;
+    font-size: 38rpx;
+    border: 1rpx solid #333;
+    border-radius: 10rpx;
+    top:20%;
+    left: 20%;
+    position: absolute;
+}
+

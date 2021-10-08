@@ -10,7 +10,7 @@
     width: 100%;
     background: white;
 }
-.QucikgameIcon{
+.BackIcon{
   width: 100rpx;
   height:110rpx;  
   display: flex;
