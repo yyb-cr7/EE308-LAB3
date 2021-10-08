@@ -1,0 +1,31 @@
+/* components/bottomIcon/bottomIcon.wxss */
+.bottomIcon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    top:92%;
+    width: 100%;
+    background: white;
+}
+.QucikgameIcon{
+  width: 100rpx;
+  height:110rpx;  
+  display: flex;
+
+  
+}
+  .historyIcon{
+    width: 100rpx;
+    height:110rpx;  
+    display: flex;
+
+    
+  }
+  .myInfoIcon{
+    width: 100rpx;
+    height:110rpx; 
+    display: flex; 
+  }

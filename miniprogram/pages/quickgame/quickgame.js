@@ -1,28 +1,18 @@
-// pages/index/main_index.js
+// pages/quickgame/quickgame.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        msg : "规则"
+
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        console.log('onload()')
-        //修改状态数据
-        console.log(this.data.log) // 代表当前界面的实例对象
-        
-        this.setData({
-            msg : '单机游戏'
-        })
-        console.log(this.data.log) // 代表当前界面的实例对象)
-        setTimeout(()=>{
 
-        },10)
     },
 
     /**

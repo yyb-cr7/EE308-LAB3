@@ -1,8 +1,12 @@
 <view class="indexContainer">
     <image class="background" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/main_background.jpg" > </image>
 <view>
-    <text class="username">单机游戏</text>   
+    <text class="extra">规则</text>   
+    <text class="extra2">客服</text>  
 </view>
-        <text class="button">{{msg}}</text> 
-        <text class="button">加入房间</text> 
+<image class="enterRoom" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/enterRoom.png" > </image>    
+<image class="singleGame" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/singleGame.png" > </image>   
+ <image class="createRoom" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/createRoom.png" > </image>    
 </view>
+<!---底部栏-->>
+<bottomIcon/>
