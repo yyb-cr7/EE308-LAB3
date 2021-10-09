@@ -13,12 +13,12 @@ Page({
             rank:"", //骰子判定的结果
             dices:[
                 "cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/rowing_dices.gif",
-                "/static/image/shaizi1.png",
-                "/static/image/shaizi2.png",
-                "/static/image/shaizi3.png",
-                "/static/image/shaizi4.png",
-                "/static/image/shaizi5.png",
-                "/static/image/shaizi6.png"
+                "cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/1.png",
+                "cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/2.png",
+                "cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/3.png",
+                "cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/4.png",
+                "cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/5.png",
+                "cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/6.png"
             ], //存储图片路径
             animation:"", //gif
             buttonText:"摇起来",
@@ -168,9 +168,7 @@ Page({
                      isBobingOver:false,
                      currentNum:playerNum
                 })
-                results=[];
-                wx.removeStorageSync("results");
-                console.log("新的一局，人数为： ",this.data.currentPlayerNum);          
+                     
             },
 
             returnBack(){
@@ -223,5 +221,10 @@ Page({
                            }) ;
                     }
                         
+                    },
+                    tosingleGame(){
+                      wx.navigateTo({
+                        url: '/pages/singleGame/singleGame',
+                      })
                     }
                 })

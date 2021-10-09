@@ -8,5 +8,6 @@
 <image class="singleGame" catchtap="tosingleGame" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/singleGame.png" > </image>   
  <image class="createRoom" catchtap="tocreateRoom" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/createRoom.png" > </image>    
 </view>
+<image class="title" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/5GZ7PIWAJ3{DX8YBVAOT7XC.png"></image>
 <!---底部栏-->>
 <bottomIcon/>

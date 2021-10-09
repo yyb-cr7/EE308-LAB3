@@ -24,21 +24,21 @@ page {
 .enterRoom {
     width : 280rpx;
     height : 280rpx;
-    top: 20%;
+    top: 25%;
     left: 30%;
     position: absolute;
 }
 .singleGame {
     width : 280rpx;
     height : 280rpx;
-    top: 40%;
+    top: 45%;
     left: 50%;
     position: absolute;
 }
 .createRoom {
     width : 280rpx;
     height : 280rpx;
-    top: 52%;
+    top: 55%;
     left: 10%;
     position: absolute;
 }
@@ -59,7 +59,13 @@ page {
     left: 88%;
     position:absolute;
 }
-
+.title{
+    width: 95%;
+    height: 150px;
+    top: 6%;
+    position: absolute;
+    left: 5%;
+}
 .button {
     width : 300rpx;
     height: 80rpx;

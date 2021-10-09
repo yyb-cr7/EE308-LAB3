@@ -1,6 +1,12 @@
 <view class="indexContainer">
     <image class="background" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/main_background.jpg" > </image>
+    <!--显示当前是哪一个玩家-->
+    <view class="player">
+        <text>单机游戏</text>
+       
+    </view>
 
+     <!--规则 客服链接-->
     <text class="extra" catchtap="toRule">规则</text>   
     <text class="extra2" catchtap="toServer">客服</text>  
 
@@ -32,7 +38,7 @@
         <button wx:if="{{currentNum>1}}" class="continue" catchtap="continueClick">
             <text>继续</text>    
         </button>
-        <button wx:elif="{{currentNum==1}}" class="newGame" catchtap="newClick">
+        <button wx:elif="{{currentNum==1}}" class="newGame" catchtap="tosingleGame">
             <text>新的一局</text>
         </button>
         <button class="return" catchtap="returnBack">
