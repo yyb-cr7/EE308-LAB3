@@ -1,0 +1,15 @@
+/* pages/future/future.wxss */
+.background{
+    width :100%;
+    height : 92%;
+    position: absolute;
+    z-index: -1;
+ }
+
+ .futurePic{
+    width :30%;
+    height : 22%;
+    left: 37%;
+    position: absolute;
+    top: 30%;
+ }

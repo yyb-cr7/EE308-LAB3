@@ -1,2 +1,12 @@
-<!--pages/enterRoom/enterRoom.wxml-->
-<text>pages/enterRoom/enterRoom.wxml</text>
+<view class="indexContainer">
+    <image class="background" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/main_background.jpg" > </image>
+<view>
+    <text class="extra" catchtap="toRule">规则</text>   
+    <text class="extra2" catchtap="toServer">客服</text>  
+</view>
+    <button class="button" catchtap="toFuture">
+            <text>结算</text>
+        </button>
+</view>
+<!---底部栏-->>
+<bottomIcon/>

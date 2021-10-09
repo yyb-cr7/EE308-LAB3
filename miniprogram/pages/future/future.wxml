@@ -1,0 +1,7 @@
+<!--pages/future/future.wxml-->
+<view class="indexContainer">
+    <image class="background" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/main_background.jpg" > </image>
+    <image class="futurePic" src=cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/敬请期待.png" > </image>
+</view>
+<!---底部栏-->>
+<bottomIcon/>

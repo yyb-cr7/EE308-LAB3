@@ -1,13 +1,26 @@
 <view class="indexContainer">
     <image class="background" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/main_background.jpg" > </image>
 <view>  
-    <text class="enterButton">博饼</text> 
+    <text class="extra" catchtap="toRule">规则</text>   
+    <text class="extra2" catchtap="toServer">客服</text>  
 </view> 
-<view class="itemView">用户名：
-    <input class="input" name="userName" placeholder="请输入用户名"
-    bindinput="userNameInput"/>
-</view>
-<image class="enterRoom" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/enterRoom.png" > </image>    
+    <block wx:if="{{isBobingOver==true}}">
+        <view class="rank" >
+         <text>{{rank}}</text>
+        </view>
+        <view class="diceList">
+            <image  wx:for="{{displayList}}" src="{{item}}"></image>
+        </view>
+        <button wx:if="{{currentNum>1}}" class="continue" catchtap="continueClick">
+            <text>继续</text>    
+        </button>
+        <button wx:elif="{{currentNum==1}}" class="newGame" catchtap="newClick">
+            <text>新的一局</text>
+        </button>
+        <button class="return" catchtap="returnBack">
+            <text>退出</text>
+        </button>
+    </block> 
 <text class="endButton">结算</text>  
 </view>
 <!---底部栏-->>

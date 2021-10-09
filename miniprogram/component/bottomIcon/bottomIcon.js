@@ -25,7 +25,7 @@ Component({
           },
           Back(){
             wx.navigateTo({
-              url: '/pages/main_index/main_index',
+              url: '/pages/index/main_index',
             })
           },
           toHistory(){

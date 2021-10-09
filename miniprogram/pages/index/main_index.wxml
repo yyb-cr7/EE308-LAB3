@@ -1,8 +1,8 @@
 <view class="indexContainer">
     <image class="background" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/main_background.jpg" > </image>
 <view>
-    <text class="extra">规则</text>   
-    <text class="extra2">客服</text>  
+    <text class="extra" catchtap="toRule">规则</text>   
+    <text class="extra2" catchtap="toServer">客服</text>  
 </view>
 <image class="enterRoom" catchtap="toenterRoom" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/enterRoom.png" > </image>    
 <image class="singleGame" catchtap="tosingleGame" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/singleGame.png" > </image>   

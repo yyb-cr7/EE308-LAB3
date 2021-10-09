@@ -22,7 +22,16 @@ Page({
             wx.navigateTo({
               url: '/pages/createRoom/createRoom',
             })
+          },
+          toRule(){
+            wx.navigateTo({
+              url: '/pages/Rule/Rule',
+            })
+          },
+          toServer(){
+            wx.navigateTo({
+              url: '/pages/Server/Server',
+            })
           }
-
     
 })

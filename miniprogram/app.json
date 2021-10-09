@@ -6,7 +6,10 @@
         "pages/history/history",
         "pages/enterRoom/enterRoom",
         "pages/singleGame/singleGame",
-        "pages/createRoom/createRoom"
+        "pages/createRoom/createRoom",
+        "pages/future/future",
+        "pages/Rule/Rule",
+        "pages/Server/Server"
     ],
     "window": {
         "backgroundColor": "#F6F6F6",
