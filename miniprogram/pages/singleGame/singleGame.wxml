@@ -1,16 +1,34 @@
 <view class="indexContainer">
     <image class="background" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/main_background.jpg" > </image>
-<view>  
+
     <text class="extra" catchtap="toRule">规则</text>   
     <text class="extra2" catchtap="toServer">客服</text>  
-</view> 
+
+      <!--人数显示-->
+      <block wx:if="{{isNumshow==true}}" catchtap="numClick">
+    <view class="container">
+    <input class="searchBar1" placeholder-style="font-size:15px" placeholder="请输入博饼人数" bindinput="bindKeyInput"/>
+ </view> 
+
+ <view class="sbBar" catchtap="numSure">
+    <text>确定</text> 
+ </view> 
+ </block> 
+
+ <!--博饼按钮-->
+      <button wx:if="{{isBobingOver==false}}" class="pressButton" catchtap="startClick">{{buttonText}}
+      </button>  
+    <image class="diceAnimation" src="{{animation}}"></image>
+     
     <block wx:if="{{isBobingOver==true}}">
         <view class="rank" >
          <text>{{rank}}</text>
         </view>
+
         <view class="diceList">
             <image  wx:for="{{displayList}}" src="{{item}}"></image>
         </view>
+
         <button wx:if="{{currentNum>1}}" class="continue" catchtap="continueClick">
             <text>继续</text>    
         </button>
@@ -21,7 +39,6 @@
             <text>退出</text>
         </button>
     </block> 
-<text class="endButton">结算</text>  
 </view>
 <!---底部栏-->>
 <bottomIcon/>

@@ -1,7 +1,11 @@
 // pages/singleGame/singleGame.js
 var clickTime=0;// 单机次数
-var playerNum=2; // 默认单机游戏为两人
-var currentPlayerNum=playerNum;
+var numclickTime=0; 
+var currentPlayerNum;
+var playerNum=0;
+var num;
+var numSure=0;
+
 Page({
         data: {
             resultList:[0, 0, 0, 0, 0, 0, 0], //开始游戏后骰子的结果，resultlist[0]代表点数为1的有几个
@@ -16,16 +20,18 @@ Page({
                 "/static/image/shaizi5.png",
                 "/static/image/shaizi6.png"
             ], //存储图片路径
-            bowlPicture:"/static/image/bobingPic.png", //碗的路径
             animation:"", //gif
             buttonText:"摇起来",
             isBobingOver:false,
-            currentNum: playerNum,
-            nextButton:""
+            currentNum:0,
+            isNumshow:true,
+            nextButton:"",
+            
         },
     
         
             startClick(){ 
+                
                 clickTime %= 2;
                 clickTime ++ ;
                 if(clickTime%2 == 1){                
@@ -35,7 +41,7 @@ Page({
                         bowlPicture:"",
                     })
                 }else { //结算游戏
-                    currentPlayerNum --;
+                    
                     console.log(this.data.currentNum);  
                     this.showRank();
                     this.setData({
@@ -44,7 +50,7 @@ Page({
                         animation:"",
                         bowlPicture:"/static/image/bobingPic.png",
                         resultList:[0, 0, 0, 0, 0, 0, 0],
-                        
+                       
                     })
                     
                 }  
@@ -142,7 +148,7 @@ Page({
                 }
                 else{
                     this.setData({
-                        rank:"再接再厉~"
+                        rank:"下次加油哦"
                     })
                 }
                 console.log(this.data.rank);
@@ -153,7 +159,7 @@ Page({
             continueClick(){
                  this.setData({
                      isBobingOver:false,
-                     currentNum:currentPlayerNum
+                     currentNum: --this.data.currentNum
                 })      
             },
 
@@ -162,8 +168,9 @@ Page({
                      isBobingOver:false,
                      currentNum:playerNum
                 })
-                currentPlayerNum=playerNum;
-                console.log(this.data.currentNum);        
+                results=[];
+                wx.removeStorageSync("results");
+                console.log("新的一局，人数为： ",this.data.currentPlayerNum);          
             },
 
             returnBack(){
@@ -180,5 +187,41 @@ Page({
                 wx.navigateTo({
                   url: '/pages/Server/Server',
                 })
-              }
-})
+              },
+
+              numClick(){ 
+                numclickTime ++ ;
+                if(numclickTime<=2 ){                
+                    this.setData({
+                        isNumshow : true
+                       }) ;
+                }else {
+                    this.setData({
+                        isNumshow : false
+                       }) ;
+                }
+                    
+                },  
+
+                  bindKeyInput:function(e) {
+                    num = e.detail.value;
+                    playerNum=num;
+                    console.log(playerNum);
+                  },
+                  numSure(){ 
+                    numSure ++ ;
+                    if(numSure>=1 ){                
+                       this.setData({
+                        isNumshow : false
+                       }) ;
+                       this.setData({
+                       currentNum : playerNum
+                       }) ;
+                    }else {
+                        this.setData({
+                            isNumshow : true
+                           }) ;
+                    }
+                        
+                    }
+                })
