@@ -6,10 +6,43 @@
   z-index: -1;
 }
 .font1{
+  width :45%;
+  height : 24%;
+  position: absolute;
+  z-index: -1;
+  top: 5%;
+  left: 12%;
+}
+
+.font2{
   width :40%;
   height : 24%;
   position: absolute;
   z-index: -1;
-  top: 1%;
+  top: 15%;
+  left: 50%;
+}
+
+.font3{
+  width :35%;
+  height : 28%;
+  position: absolute;
+  z-index: -1;
+  top: 25%;
   left: 13%;
+}
+.font4{
+  width :35%;
+  height : 28%;
+  position: absolute;
+  z-index: -1;
+  top: 35%;
+  left: 50%;
+}
+.star{
+  height: 300px;
+  top: 49%;
+  position: absolute;
+  left: 10%;
+
 }

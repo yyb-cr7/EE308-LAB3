@@ -1,1 +1,7 @@
 /* pages/myInfo/myInfo.wxss */
+.mine{
+    width :100%;
+    height : 92%;
+    position: absolute;
+    z-index: -1;
+ }

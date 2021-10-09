@@ -1,1 +1,7 @@
-/* pages/history/history.wxss */
+/* pages/history/history.wxss *//* pages/rank/rank.wxss */
+.rank{
+    width :100%;
+    height : 100%;
+    position: absolute;
+    z-index: -1;
+ }

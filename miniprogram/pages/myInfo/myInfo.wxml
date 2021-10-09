@@ -1,2 +1,4 @@
 <!--pages/myInfo/myInfo.wxml-->
-<text>pages/myInfo/myInfo.wxml</text>
+<image class="mine" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/QQ截图20211009231219.png"></image>
+<!---底部栏-->>
+<bottomIcon/>

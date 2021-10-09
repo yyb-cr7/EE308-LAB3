@@ -1,1 +1,7 @@
 /* pages/createRoom/createRoom.wxss */
+.background{
+    width :100%;
+    height : 92%;
+    position: absolute;
+    z-index: -1;
+ }

@@ -1,2 +1,4 @@
 <!--pages/createRoom/createRoom.wxml-->
-<text>pages/createRoom/createRoom.wxml</text>
+<image class="background" src="cloud://cloud1-0gayfwqf077f607a.636c-cloud1-0gayfwqf077f607a-1307730680/main_background.jpg" > </image>
+<!---底部栏-->>
+<bottomIcon/>
