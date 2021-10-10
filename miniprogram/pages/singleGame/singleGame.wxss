@@ -10,28 +10,27 @@ page {
 .pressButton{
     display: flex;
     position: absolute;
-    top: 35%;
+    top: 30%;
     background-color: rgb(241, 233, 238);
-    height:50px;
-    width: 2px;   
-    vertical-align:middle;
-    text-align: center;
+    height:40px;
+    width: 20%;   
     line-height: 25px;
+    text-align: center;
+    font-size: larger;
     border-radius: 30rpx ;
 }
 .diceAnimation{
     display: flex;
     position: absolute;
-    height:240rpx;
-    width: 240rpx;   
-    top: 71%;
+    height:400rpx;
+    width: 400rpx;   
+    top:40%;
 }
 .diceList{
     display: flex;
     position: absolute;
     flex-direction: row;
-    top:30%;
-    
+    top:50%;   
 }
 .diceList image{
     height: 100rpx;
@@ -41,7 +40,8 @@ page {
     display: flex;
     position: absolute;
     top:20%;
-    
+    color: yellow;
+    font-weight: 800;
     height: 100rpx;
     width:750rpx;
 }
@@ -54,7 +54,7 @@ page {
 .continue{
     display: flex;
     position: absolute;
-    top:40%;
+    top:30%;
     height:90rpx;
     width:150rpx;
     background:rgb(242, 243, 206);
@@ -67,7 +67,7 @@ page {
 .newGame{
     display: flex;
     position: absolute;
-    top:40%;
+    top:30%;
     height:90rpx;
     width:150rpx;
     background:rgb(242, 243, 206);
@@ -80,7 +80,7 @@ page {
 .return{
     display: flex;
     position: absolute;
-    top:50%;
+    top:40%;
     height:90rpx;
     width:30%;
     background:rgb(242, 243, 206);
@@ -182,5 +182,10 @@ page {
     font-weight: bold;
     top:10%;
     left: 40;
+    color: yellow;
     font-size: 52rpx;
+}
+
+.bb{
+    text-align: center;
 }
